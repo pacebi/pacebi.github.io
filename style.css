@@ -1,0 +1,157 @@
+/* page-wide stuff */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+	--monotone-1:#202025;
+	--monotone-2:#313236;
+	--monotone-3:#d4d4d4;
+	--monotone-4:#ffffff;
+	--accent-l:#9673de;
+	--accent-d:#62469d;
+}
+
+a{
+	  text-decoration:none;
+	  color:var(--monotone-4);
+    transition: all 100ms;
+}
+
+a:hover{
+	color:var(--accent-l);
+}
+
+body{
+    background-color:var(--monotone-1);	
+    margin:0;
+	  font-family: 'Ubuntu', sans-serif;
+	  color:var(--monotone-4);
+}
+
+/* grid */
+.lmain{
+    display:grid;
+    grid-template-areas:
+        "header header"
+        "nav    article"
+        "footer footer";
+    grid-template-columns:10em;
+}
+
+header{grid-area:header;}
+article{grid-area:article;}
+nav{grid-area:nav;}
+footer{grid-area:footer;}
+
+.smain{
+    display:flex;
+    flex-direction:column;
+}
+
+/* page content */
+.pagecontent{
+    padding:1em;
+    background-color:var(--monotone-2);
+}
+
+.pagecontent a{
+    text-decoration:underline;
+}
+
+/* large header and nav */
+.lheader{
+    background-color:var(--monotone-1);
+}
+
+.lheadertitle{
+    font-weight:bolder;
+    font-size:2em;
+    display:inline-block;
+    padding:0;
+    background-image:url("assets/pride.svg");
+    background-size:2em;
+    margin:0.5em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.lnav{
+    background-color:var(--monotone-1);
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+.lnavbutton{
+    display:block;
+    padding-top:1em;
+    padding-bottom:1em;
+    width:10em;
+    color:var(--monotone-4);
+    background-color:var(--monotone-1);
+    text-align:center;
+    transition: all 100ms ease;
+}
+
+.lnavbutton:hover{
+    color:var(--accent-l);
+    background-color:var(--monotone-4);
+    text-decoration:none;
+}
+
+.lnavselected{
+    display:block;
+    padding-top:1em;
+    padding-bottom:1em;
+    width:10em;
+    color:var(--monotone-4);
+    background-color:var(--accent-d);
+    text-align:center;
+    transition: all 100ms ease;
+}
+
+.lnavitem{
+    list-style-type:none;
+}
+
+/* small header and nav */
+.sheadertitle{
+    font-size:2em;
+    font-weight:bold;
+    background-color:var(--monotone-1);
+    margin:1em 0;
+    text-align:center;
+    width:100%;
+    display: inline-block;
+    background-image:url("assets/pride.svg");
+    background-size:2em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.snavbutton{
+    display:block;
+    background-color:var(--monotone-1);
+    text-align:center;
+    padding:0.5 0;
+}
+
+/* footer */
+.footer{
+    background-color:var(--monotone-1);
+    padding:2em;
+    font-size:0.75em;
+}
+
+.fsocialmedia{
+    padding:1em;
+}
+
+.socmedlink{
+    max-width:2em;
+    padding-right:3em;
+    padding-bottom:1em;
+}
+
+/* nav */
