@@ -1,13 +1,28 @@
 /* page-wide stuff */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-:root{
-	--monotone-1:#202025;
-	--monotone-2:#313236;
-	--monotone-3:#d4d4d4;
-	--monotone-4:#ffffff;
-	--accent-l:#9673de;
-	--accent-d:#62469d;
+@media (prefers-color-scheme: dark){
+  :root{
+    --monotone-1:#202025;
+    --monotone-2:#313236;
+    --monotone-3:#d4d4d4;
+    --monotone-4:#ffffff;
+    --accent-l:#9673de;
+    --accent-d:#62469d;
+    --title-flag:url("assets/pride-dark.svg")
+  }
+}
+
+@media (prefers-color-scheme: light){
+  :root{
+    --monotone-4:#202025;
+    --monotone-3:#313236;
+    --monotone-1:#d4d4d4;
+    --monotone-2:#ffffff;
+    --accent-d:#9673de;
+    --accent-l:#62469d;
+    --title-flag:url("assets/pride-light.svg")
+  }
 }
 
 a{
@@ -67,7 +82,7 @@ footer{grid-area:footer;}
     font-size:2em;
     display:inline-block;
     padding:0;
-    background-image:url("assets/pride.svg");
+    background-image:var(--title-flag);
     background-size:2em;
     margin:0.5em;
     background-clip: text;
@@ -94,7 +109,7 @@ footer{grid-area:footer;}
 }
 
 .lnavbutton:hover{
-    color:var(--accent-l);
+    color:var(--monotone-1);
     background-color:var(--monotone-4);
     text-decoration:none;
 }
@@ -104,7 +119,7 @@ footer{grid-area:footer;}
     padding-top:1em;
     padding-bottom:1em;
     width:10em;
-    color:var(--monotone-4);
+    color:#ffffff;
     background-color:var(--accent-d);
     text-align:center;
     transition: all 100ms ease;
@@ -119,7 +134,7 @@ footer{grid-area:footer;}
     font-size:2em;
     font-weight:bold;
     background-color:var(--monotone-1);
-    margin:1em 0;
+    padding:1em 0;
     text-align:center;
     width:100%;
     display: inline-block;
@@ -140,18 +155,13 @@ footer{grid-area:footer;}
 /* footer */
 .footer{
     background-color:var(--monotone-1);
-    padding:2em;
-    font-size:0.75em;
 }
 
 .fsocialmedia{
-    padding:1em;
+    padding:2em;
 }
 
-.socmedlink{
-    max-width:2em;
-    padding-right:3em;
-    padding-bottom:1em;
+.ftext{
+    font-size:0.75em;
+    padding:0 2em;
 }
-
-/* nav */

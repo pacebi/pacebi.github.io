@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="pride.svg"
+   sodipodi:docname="pride-dark.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +28,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="17.033258"
-     inkscape:cx="20.929643"
-     inkscape:cy="10.332727"
+     inkscape:cx="1.2328822"
+     inkscape:cy="10.156601"
      inkscape:window-width="1920"
      inkscape:window-height="1022"
      inkscape:window-x="1920"
@@ -91,5 +91,12 @@
        height="6"
        x="-2.7755576e-17"
        y="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0.3;stroke-width:0.209614"
+       id="rect179"
+       width="10"
+       height="6"
+       x="2.220446e-16"
+       y="2.220446e-16" />
   </g>
 </svg>
