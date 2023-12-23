@@ -131,18 +131,17 @@ footer{grid-area:footer;}
 
 /* small header and nav */
 .sheadertitle{
+    font-weight:bolder;
     font-size:2em;
-    font-weight:bold;
-    background-color:var(--monotone-1);
-    padding:1em 0;
-    text-align:center;
-    width:100%;
-    display: inline-block;
-    background-image:url("assets/pride.svg");
-    background-size:2em;
+    display:inline-block;
+    padding:0.5em 0;
+    background-image:var(--title-flag);
+    background-size:1.175em;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-align:center;
+    width:100%;
 }
 
 .snavbutton{
