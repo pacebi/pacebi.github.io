@@ -17,7 +17,7 @@
   :root{
     --monotone-4:#202025;
     --monotone-3:#313236;
-    --monotone-1:#d4d4d4;
+    --monotone-1:#dedee4;
     --monotone-2:#ffffff;
     --accent-d:#9673de;
     --accent-l:#62469d;
@@ -70,6 +70,13 @@ footer{grid-area:footer;}
 
 .pagecontent a{
     text-decoration:underline;
+}
+
+.notice{
+    color:white;
+    background-color:var(--accent-d);
+    padding:0.5em;
+    text-align:center;
 }
 
 /* large header and nav */
@@ -158,6 +165,11 @@ footer{grid-area:footer;}
 
 .fsocialmedia{
     padding:2em;
+}
+
+.fsocmedico{
+    color:var(--monotone-4);
+    margin:0.75em;
 }
 
 .ftext{

@@ -44,6 +44,10 @@ $(document).ready(function() {
     $("#snav").toggle();
   });
 
+  // hide notice on click
+  $(document).on("click", ".notice", function() {
+    $(this).remove();
+  });
   console.log("js working sucessfully");
 });
 
