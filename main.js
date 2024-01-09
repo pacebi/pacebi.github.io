@@ -51,4 +51,15 @@ $(document).ready(function() {
   console.log("js working sucessfully");
 });
 
-
+// cookies
+if (!Cookies.get("cookies_accepted")) {
+  if ($(window).width() > 768) {
+    $("#header").load("header/lcookie.html");
+  } else {
+    $("#header").load("header/scookie.html");
+  }
+  $(".cookie_accept").on("click", function() {
+    Cookies.set("cookies_accepted", "true", { expires: 365 });
+    $(".cookie_accept").remove();
+  });
+}
