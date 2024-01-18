@@ -52,7 +52,7 @@ $(document).ready(function() {
 });
 
 // cookies
-if (!Cookies.get("cookies_accepted")) {
+/*if (!Cookies.get("cookies_accepted")) {
   if ($(window).width() > 768) {
     $("#header").load("header/lcookie.html");
   } else {
