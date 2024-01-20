@@ -62,4 +62,4 @@ $(document).ready(function() {
     Cookies.set("cookies_accepted", "true", { expires: 365 });
     $(".cookie_accept").remove();
   });
-}
+}*/
